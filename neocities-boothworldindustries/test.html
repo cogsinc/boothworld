@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  
+  <script>
+  let currentPage = 1;
+let recordsPerPage = 1;
+
+const photoBook = [
+    { photo: "/Art/MainArt/Images/2024/jan17 boss1.jpg" },
+    { photo: "/Art/MainArt/Images/2024/jan17 boss2.jpg" },
+    { photo: "/Art/MainArt/Images/2024/jan17 boss3.jpg" }
+];
+
+function prevPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        changePage(currentPage);
+    }
+}
+
+function nextPage() {
+    if (currentPage < numPages()) {
+        currentPage++;
+        changePage(currentPage);
+    }
+}
+
+function changePage(page) {
+    let btnNext = document.getElementById("btn-next");
+    let btnPrev = document.getElementById("btn-prev");
+    let listingTable = document.getElementById("listing-table");
+    let pageSpan = document.getElementById("page");
+
+    if (page < 1) page = 1;
+    if (page > numPages()) page = numPages();
+
+    listingTable.innerHTML = "";
+
+    for (let i = (page-1) * recordsPerPage; i < (page * recordsPerPage); i++) {
+        listingTable.innerHTML += '<img src="/image/graffiti/' + photoBook[i].photo + '">'
+    }
+
+    pageSpan.innerHTML = page;
+
+    if (page == 1) {
+        btnPrev.style.visibility = "hidden";
+    } else {
+        btnPrev.style.visibility = "visible";
+    }
+
+    if (page == numPages()) {
+        btnNext.style.visibility = "hidden";
+    } else {
+        btnNext.style.visibility = "visible";
+    }
+}
+
+function numPages() {
+    return Math.ceil(photoBook.length / recordsPerPage);
+}
+
+window.onload = function() {
+    changePage(1);
+};
+  </script>
+  <body style="background-color: black;"><center>
+
+
+
+            <span id="page">1</span>
+        
+            <a href="javascript:prevPage()" id="btn-prev" style="visibility: hidden;"><button>Prev</button></a>
+            <a href="javascript:nextPage()" id="btn-next" style="visibility: visible;"><button>Next</button></a>
+</center>
+
+
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"キミだけのステップだから世界がほら輝くの"</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/png" href="/Main/Dollhouse/icon.png">
+    <style>
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+body {
+width: 1900px;
+position: relative;
+}
+
+#datehere {
+font-size: 40px;
+font-weight:bold;
+letter-spacing: -3px;
+color: #ad4c83;
+text-decoration: underline #ad4c83;
+}
+
+hr { display: block; height: 1px; width: 70%;
+    border: 0; border-top: 2px solid #f7dcdf;}
+    
+mark {
+  background-color: #f7dcdf;
+  color: #330711;
+}
+
+a:link {
+  color: #dd0b8d;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #dd0b8d;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fc64c2;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #fc64c2;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#datehere {
+font-size: 40px;
+font-weight:bold;
+letter-spacing: -3px;
+color: #531e34;
+text-decoration: underline #f4bd46;
+}
+    </style>
+  </head>
+  <body background="/Main/Dollhouse/bg.png">
+
+
+<!--Frame-->
+<div class="frame" style="position: fixed; top: 5px; left: 225px; pointer-events: none; z-index: 3;"><img src="/Main/Dollhouse/frame.png" width="1470"></div>
+
+<!--Corners/Border-->
+<div class="bottomleft" style="position: fixed; bottom: -5px; left: -5px; pointer-events: none; z-index: 3;"><img src="/Main/Dollhouse/bottomleft.png" width="450"></div>
+<div class="topleft" style="position: fixed; top: -5px; left: -5px; pointer-events: none; z-index: 2;"><img src="/Main/Dollhouse/topleft.png" width="350"></div>
+<div class="bottomright" style="position: fixed; bottom: -5px; right: -5px; pointer-events: none; z-index: 2;"><img src="/Main/Dollhouse/bottomright.png" width="560"></div>
+<div class="toprightlace" style="position: fixed; top: -5px; right: -5px; pointer-events: none; z-index: 1;"><img src="/Main/Dollhouse/toplace.png" width="350"><img src="/Main/Dollhouse/toplace.png" width="350"></div>
+<div class="topleftlace" style="position: fixed; top: -5px; left: -5px; pointer-events: none; z-index: -2;"><img src="/Main/Dollhouse/toplace.png" width="350"><img src="/Main/Dollhouse/toplace.png" width="350"></div>
+<div class="topleftlaceCORRECTION" style="position: fixed; top: -5px; left: 570px; pointer-events: none; z-index: -3;"><img src="/Main/Dollhouse/toplace.png" width="300"></div>
+<div class="toprightlaceCORRECTION" style="position: fixed; top: -5px; right: 570px; pointer-events: none; z-index: -3;"><img src="/Main/Dollhouse/toplace.png" width="300"></div>
+<div class="middleribbon" style="position: fixed; top: -100px; left: 575px; pointer-events: none; z-index: 4;"><img src="/Main/Dollhouse/middleribbon.png" width="765" height="220"></div>
+
+<!--Deco-->
+<div class="ribbonright" style="position: fixed; top: 15px; right: 0px; pointer-events: none; z-index: -2; rotate: -40deg;"><img src="/Main/Dollhouse/ribbon.png" width="130" height="350"></div>
+<div class="emu" style="position: fixed; top: 73px; right: 10px; pointer-events: none; z-index: -1; opacity: 0.7;"><img src="/Main/Dollhouse/emu2.png" width="550"></div>
+<div class="nene" style="position: fixed; top: 73px; left: 10px; pointer-events: none; z-index: -1; opacity: 0.7;"><img src="/Main/Dollhouse/NENE2.png" width="550"></div>
+
+
+<!--Text-->
+<div class="madohomuTEXT" style="position: fixed; top: 215px; left: 738px; z-index: 5;">
+<center><p><img src="/Main/Dollhouse/Rose_6.gif" width="70"><img src="/Main/Dollhouse/madohomu.png" width="300"><img src="/Main/Dollhouse/Rose_5.gif" width="70"><br>
+<mark>The moon eclipses the <a href="https://kissingonclouds.neocities.org/">sun</a> so everyone can admire its beauty.<br>They spin in a endless dance.</mark><br>
+<img src="/Main/Dollhouse/Blumenlinie_30.gif" width="300"></p>
+</center></div>
+
+
+<!--Nav-->
+<div class="nav" style="position: fixed; bottom: -10px; left: 890px; z-index: 5;"><h3><mark>
+<a href="/Index/home">Home</a> &
+<a href="/sitemap">Sitemap</a>
+</mark></h3></div>
+
+
+<!--Title/Date-->
+<div class="title" style="position: fixed; bottom: 105px; left: 760px; z-index: 5;"><img src="/Main/Dollhouse/title.png" width="400"></div>
+
+<div class="counter" style="position: fixed; bottom: 165px; left: 855px; z-index: 6;">
+  <b><img src="/Main/Dollhouse/Miniblume_104.GIF" width="25" style="transform: scaleX(-1);">{<span id="datehere" title="LIVE count-up timer"><u>Date</u></span> Days Since}<img src="/Main/Dollhouse/Miniblume_104.GIF" width="25"></b>
+</div>
+
+<script>
+        var montharray = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
+        function countup(yr, m, d) {
+            var today = new Date()
+            var todayy = today.getYear()
+            if (todayy < 1000)
+                todayy += 1900
+            var todaym = today.getMonth()
+            var todayd = today.getDate()
+            var todaystring = montharray[todaym] + " " + todayd + ", " + todayy
+            var paststring = montharray[m - 1] + " " + d + ", " + yr
+            var difference = (Math.round((Date.parse(todaystring) - Date.parse(paststring)) / (24 * 60 * 60 * 1000)) * 1)
+            difference += " "
+            document.getElementById("datehere").innerHTML = difference
+        }
+        //enter the count up date using the format year/month/day
+        countup(2021, 6, 18)
+
+</script>
+
+
+  </body>
+</html>

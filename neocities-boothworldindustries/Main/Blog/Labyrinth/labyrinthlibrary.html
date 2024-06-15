@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemuro Memorial Hall</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/png" href="/Main/Blog/Labyrinth/blackrose.png">
+    <style>
+body {
+  background-image: url("/Main/Blog/Labyrinth/labyrinthbg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+}
+        
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+#scroll3 {
+height: 947px;
+width: 30%;
+padding: 10px;
+border: 3px double #37364A;
+font: 12px Georgia, Garamond, Serif;
+overflow: auto;
+background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(19,18,26,1) 100%);
+    /* to change gradient color go to cssgradient.io */
+opacity: 0.8;
+}
+
+#scrollside {
+height: 275px;
+width: 11%;
+padding: 10px;
+font: 12px Georgia, Garamond, Serif;
+overflow: auto;
+background-image: url("/Main/Blog/Labyrinth/652.GIF");
+opacity: 0.5;
+}
+
+#scrollside2 {
+height: 245px;
+width: 13%;
+padding: 10px;
+font: 12px Georgia, Garamond, Serif;
+overflow: auto;
+background-image: url("/Main/Blog/Labyrinth/652.GIF");
+opacity: 0.5;
+}
+
+        @font-face {
+    font-family: "CogFont"; 
+    src: url("https://files.catbox.moe/a80iha.ttf") format("truetype");
+}
+
+p {
+  font-family: "CogFont";
+}
+
+h2 {
+  font-family: "CogFont";
+}
+
+h1 {
+  font-family: "CogFont";
+}
+
+h3 {
+  font-family: "CogFont";
+}
+
+    table {
+   display: inline-block;
+    background-color: #ada2d3;
+}   
+
+a:link {
+  color: #817d91;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #817d91;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8d8fb5;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #8d8fb5;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 2px solid #323647;
+    width:65%;}
+    
+mark {
+  color: white;
+  background-color: #737789;
+}
+</style>
+
+<script type="text/javascript">
+// <![CDATA[
+var speed=40; // lower number for faster
+var drops=10; // number of 'drops'
+var colour="#323647"; // colour of drops (generally grey!)
+
+/***************************\
+*   Rainy Afternoon Effect  *
+*(c)2011-13 mf2fm web-design*
+*  http://www.mf2fm.com/rv  *
+* DON'T EDIT BELOW THIS BOX *
+\***************************/
+
+var flks=new Array();
+var flkx=new Array();
+var flky=new Array();
+var fldy=new Array();
+var swide, shigh, boddie;
+var ie_version=(navigator.appVersion.indexOf("MSIE")!=-1)?parseFloat(navigator.appVersion.split("MSIE")[1]):false;
+
+function addLoadEvent(funky) {
+  var oldonload=window.onload;
+  if (typeof(oldonload)!='function') window.onload=funky;
+  else window.onload=function() {
+    if (oldonload) oldonload();
+    funky();
+  }
+}
+
+addLoadEvent(storm);
+
+function storm() { if (document.getElementById) {
+  var r1, r2;
+  boddie=document.createElement("div");
+  boddie.style.position="fixed";
+  boddie.style.top="0px";
+  boddie.style.left="0px";
+  boddie.style.width="1px";
+  boddie.style.height="1px";
+  boddie.style.overflow="visible";
+  boddie.style.backgroundColor="transparent";
+  document.body.appendChild(boddie);
+  set_width();
+  for (var i=0; i<drops; i++) {
+    flks[i]=createDiv(16, 2, "transparent");
+    r1=createDiv(6, 2, colour);
+    r1.style.top="10px";
+    r1.style.left="0px";
+    flks[i].appendChild(r1);
+    r2=createDiv(10, 2, colour);
+    r2.style.top="0px";
+    r2.style.left="0px";
+    if (ie_version && ie_version<10) r2.style.filter="alpha(opacity=25)";
+    else r2.style.opacity=0.25;
+    flks[i].appendChild(r2);
+    flkx[i]=2*Math.floor(Math.random()*swide/2);
+    flky[i]=Math.floor(Math.random()*shigh);
+    fldy[i]=2+Math.floor(Math.random()*4);
+    flks[i].style.left=flkx[i]+"px";
+    flks[i].style.top=flky[i]+"px";
+    boddie.appendChild(flks[i]);
+  }
+  setInterval("cats_and_dogs()", speed);
+}}
+
+function createDiv(height, width, colour) {
+  var div=document.createElement("div");
+  div.style.position="absolute";
+  div.style.height=height+"px";
+  div.style.width=width+"px";
+  div.style.overflow="hidden";
+  div.style.backgroundColor=colour;
+  return (div);
+}
+
+window.onresize=set_width;
+function set_width() {
+  var sw_min=999999;
+  var sh_min=999999;
+  if (document.documentElement && document.documentElement.clientWidth) {
+    sw_min=document.documentElement.clientWidth;
+    sh_min=document.documentElement.clientHeight;
+  }
+  if (typeof(self.innerWidth)!="undefined" && self.innerWidth) {
+    if (self.innerWidth<sw_min) sw_min=self.innerWidth;
+    if (self.innerHeight<sh_min) sh_min=self.innerHeight;
+  }
+  if (document.body.clientWidth) {
+    if (document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+    if (document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+  }
+  if (sw_min==999999 || sh_min==999999) {
+    sw_min=800;
+    sh_min=600;
+  }
+  swide=sw_min-2;
+  shigh=sh_min;
+}
+
+function cats_and_dogs(c) {
+  var i, x, o=0;
+  for (i=0; i<drops; i++) {
+    flky[i]+=fldy[i];
+    if (flky[i]>=shigh-16) {
+	  flky[i]=-16;
+	  fldy[i]=2+Math.floor(Math.random()*4);
+	  flkx[i]=2*Math.floor(Math.random()*swide/2);
+	  flks[i].style.left=flkx[i]+"px";
+	}
+	flks[i].style.top=flky[i]+"px";
+  }
+}
+// ]]>
+</script>
+
+  </head>
+  <body>
+  
+<!--And what are the chances of you being in here, of all pages. Of all the pages I've made you decided to snoop into this one. You know, I do that to yours too.. You should really stop using Discord to link images. But its cute.. So whats more to be questioned, me putting this here or you finding it? I guess that means we're both mutually insane. You don't get my confession here.-->
+  
+<!--Frames-->
+  <div class="frames" style="position: absolute; top: -5px; left: 5px; z-index: 2; pointer-events: none;"><img src="/Main/Blog/Labyrinth/labyrinthframes.png"></div>
+  
+  
+<!--MainBox-->
+  <div id="scroll3" style="position: fixed; top: -3px; right: 30px;">
+  </div>
+<!--Frame-->
+  <IFRAME name="mainframe" src="/Main/Blog/Labyrinth/default.html" style="position: fixed; top: 0px; right: 35px; opacity: 0.8;" width=590 height=917 marginwidth=0 marginheight=0 frameborder=0 scrolling=auto></IFRAME>
+
+
+<!--SideScrollEntries-->
+<div id="scrollside" style="position: fixed; top: 46px; left: 60px;"><center><font color="#737789"><br>
+
+<hr><h3><mark>[<u>2024</u>]</mark><br>
+<a href="/Main/Blog/Labyrinth/Entries/012" target="mainframe">012</a><br>
+<a href="/Main/Blog/Labyrinth/Entries/011" target="mainframe">011</a><br>
+<a href="/Main/Blog/Labyrinth/Entries/010" target="mainframe">010</a><br>
+<a href="/Main/Blog/Labyrinth/Entries/009" target="mainframe">009</a><br>
+<a href="/Main/Blog/Labyrinth/Entries/008" target="mainframe">008</a>
+</font></h3>
+
+
+<hr><h3><mark>[<u>2023</u>]</mark><br>
+<a href="/Main/Blog/Labyrinth/Entries/007" target="mainframe">007</a><br>
+<a href="/Main/Blog/Labyrinth/Entries/006" target="mainframe">006</a><br>
+<a href="/Main/Blog/Labyrinth/Entries/005" target="mainframe">005</a><br>
+<a href="/Main/Blog/Labyrinth/Entries/004" target="mainframe">004</a><br>
+<a href="/Main/Blog/Labyrinth/Entries/003" target="mainframe">003</a><br>
+<a href="/Main/Blog/Labyrinth/Entries/002" target="mainframe">002</a><br>
+<a href="/Main/Blog/Labyrinth/Entries/001" target="mainframe">001</a>
+</font></h3><hr>
+</center></div>
+
+
+<!--SideScrollNav-->
+<div id="scrollside2" style="position: fixed; bottom: 46px; left: 60px;"><center><br><br><br><br>
+<h1><a href="/Main/Blog/blog"><mark>Back</mark></a><br>
+<a href="/Index/home"><mark>Home</mark></a><br>
+<a href="/sitemap"><mark>Sitemap</mark></a></h1>
+</center></div>
+
+  </body>
+</html>
