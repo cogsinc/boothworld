@@ -28,6 +28,7 @@ body {
 background-color: black;
 width: 1920px;
 position: relative;
+overflow-x: hidden;
 }
     
 @keyframes glow {
@@ -284,18 +285,7 @@ A WORD<br>FROM OUR<br>SPONSOR!
 <!--RandomPage-->
 <div class="randomicon" style="position: absolute; bottom: -910px; right: 510px; z-index: -2;">
 	<a href="#" onclick="randompage();"><img class="speen" src="/Index/DistractionNews.png" width="120" height="120"></a>
-		<script>
-		var randomizer = [
-			'https://boothworldindustries.neocities.org/WR/Splatnet/home',
-			'https://boothworldindustries.neocities.org/Art/OCs/Toontown/COGs/Bossbots/Pages/tinaandmimadolleye',
-			'https://boothworldindustries.neocities.org/Art/MainArt/art'
-		];
-
-function randompage() {
-var i = parseInt(Math.random() * randomizer.length);
-location.href = randomizer[i];
-}
-</script></div>
+</div>
 
 <div class="randomtext" style="position: absolute; bottom: -970px; right: 410px;"><h2><mark style="background-color: darkblue; color: white;"><i>?<br>?<br>?</i></h2></mark></div>
 
@@ -306,7 +296,7 @@ location.href = randomizer[i];
 <div class="window" style="z-index: -1; position: absolute; top: 285px; left: 580px; pointer-events: none;"><img src="/Index/winxp.png" width="300" height="400"></div>
 
 <!--Calendar-->
-<div class="calendarwindow" style="position: absolute; top: 250px; right: 550px; z-index: 2; border: 3px outset #384cc1; background-image: url('/Index/cloudbg.gif'); padding: 4px;">
+<div class="calendarwindow" style="position: absolute; top: 200px; right: 550px; z-index: 2; border: 3px outset #384cc1; background-image: url('/Index/cloudbg.gif'); padding: 4px;">
 <center><h3><b style="background-color: #05108c; color: yellow;"><i><u><img src="/Index/rain4.gif">TODAYS</b></i></u>
 <b style="background-color: #af0505; color: yellow;"><i><u>FORECAST<img src="/Index/sun6.gif"></b></i></u></h3></center>
 <script src="/Index/Calendar/calendar.js" width="200"></script>

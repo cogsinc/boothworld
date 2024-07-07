@@ -3,71 +3,129 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Splatnet: A Splatoon Webring!</title>
+    <title>Splatnet: A Splatoon Webring</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="shortcut icon" type="image/png" href="/WR/Splatnet/Images/orangeinkling.png">
   <style>
   html { overflow-y: hidden; }
-  
-  hr { display: block; height: 1px;
-    border: 0; border-top: 2px solid grey;
-    width:60%;}
+
+  body {
+  background-image: url("/WR/Splatnet/splatnetbgg.png");
+  background-repeat: no-repeat;
+  width: 1905px;
+  position: relative;
+}
+
+.module-border-wrap {
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, rgb(114, 114, 255), rgb(255, 94, 0));
+  padding: 3px;
+  opacity: 0.7;
+  mix-blend-mode: hard-light;
+}
+
+.module {
+  background: white;
+  opacity: 0.6;
+  color: rgb(158, 158, 158);
+  padding: 2;
+  mix-blend-mode: hard-light;
+}
+
+@font-face {
+  font-family: "SplatFont"; 
+  src: url("https://files.catbox.moe/o52gm7.otf");
+}
+
+@font-face {
+  font-family: "SplatFont2"; 
+  src: url("https://files.catbox.moe/86id5l.otf");
+}
+
+h2 {
+  font-family: "SplatFont";
+  color: rgb(236, 88, 132);
+}
+
+h3 {
+  font-family: "SplatFont2";
+}
+
+p {
+  font-family: "SplatFont2";
+  font-size: 1.8em;
+}
+
+#header {
+    background: linear-gradient(to top, #f2fa80 30%, #ff4128 100%);
+    font-size: 5em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #910ae0;
+    opacity: 0.9;
+  }
+
+  #header2 {
+    background: linear-gradient(to top, #f5b049 40%, #ec5151 100%);
+    font-size: 2.3em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #910ae0;
+    opacity: 0.9;
+  }
+
+  a:link {
+  color: rgb(255, 220, 156);
+  background-color: transparent;
+  font-style: italic;
+}
+
+a:visited {
+  color: rgb(255, 220, 156);
+  background-color: transparent;
+  font-style: italic;
+}
+
+a:hover {
+  color: rgb(251, 255, 0);
+  background-color: transparent;
+  font-style: italic;
+  font-weight: bold;
+}
+
+a:active {
+  color: rgb(251, 255, 0);
+  background-color: transparent;
+  font-style: italic;
+  font-weight: bold;
+}
   </style>
   </head>
-  <body background="/WR/Splatnet/Images/splatnetbg.jpg">
+  <body>
   
-  <!--Join-->
-  <div class="join" style="position: fixed; top: 0px; left: 500px;"><a href="/WR/Splatnet/join.html"><img src="/WR/Splatnet/Images/join.png" width="250"></a></div>
-  <!--Rules-->
-  <div class="rules" style="position: fixed; top: 0px; left: 715px;"><a href="/WR/Splatnet/rules.html"><img src="/WR/Splatnet/Images/rules.png" width="250"></a></div>
-  <!--Members-->
-  <div class="members" style="position: fixed; top: 0px; right: 715px;"><a href="/WR/Splatnet/members.html"><img src="/WR/Splatnet/Images/members.png" width="250"></a></div>
-  <!--Styles-->
-  <div class="styles" style="position: fixed; top: 0px; right: 500px;"><a href="/WR/Splatnet/styles.html"><img src="/WR/Splatnet/Images/styles.png" width="250"></a></div>
-  
-  <!--BannerLeft-->
-  <div class="leftbanner" style="position: fixed; top: 10px; left: 315px; z-index: -1;"><img src="/WR/Splatnet/Images/bannerleft.png" height="50" width="300"></div>
-  <!--BannerRight-->
-  <div class="rightbanner" style="position: fixed; top: 10px; right: 315px; z-index: -1;"><img src="/WR/Splatnet/Images/bannerright.png" height="50" width="300"></div>
-  
-  
-  <!--Callie-->
-  <div class="callie" style="position: fixed; bottom: 260px; left: 70px; transform: rotate(-5deg); border: 3px groove #fc8fd8; background-color: #fc8fd8;"><img src="/WR/Splatnet/Images/Callie_Squid_Sisters_pose.gif" width="320"></div>
-  <!--Marie-->
-  <div class="marie" style="position: fixed; bottom: 240px; right: 70px; transform: rotate(5deg); border: 3px groove #a3fc8f; background-color: #a3fc8f;"><img src="/WR/Splatnet/Images/Marie_Squid_Sisters_pose.gif" width="320"></div>
-  
-  <!--Dualies-->
-  <div class="dualies" style="position: fixed; bottom: 20px; right: 180px;"><img src="/WR/Splatnet/Images/dualiesinkling.png" width="280"></div>
-  <!--Sniper-->
-  <div class="sniper" style="position: fixed; bottom: 570px; right: 90px;"><img src="/WR/Splatnet/Images/sniperinkling.png" width="260"></div>
-  
-  <!--Roller-->
-  <div class="roller" style="position: fixed; bottom: 20px; left: 250px;"><img src="/WR/Splatnet/Images/rollerinkling.png" width="195"></div>
-  <!--Octoling-->
-  <div class="octoling" style="position: fixed; bottom: 570px; left: 180px;"><img src="/WR/Splatnet/Images/octoling.png" width="160"></div>
-  
-  
-  <!--INFOS-->
-  <div class="middle" style="position: fixed; top: 10px; right: 485px; z-index: -3; background-color: lightgrey; border: 5px outset grey; width: 940px; height: 870px;"><center><br><br><br><br><br><br><br>
-  <p>Welcome to Splatnet! A Splatoon themed webring for fans of Nintendos series of colorful ink based shooter games. Created on <u>October 13th, 2022</u>!</p>
-  
-  <hr>
-  
-  <h3>What is Splatoon?</h3>
-<p>Splatoon is a shooter game franchise with currently 3 games in the series, and 2 major DLCs that expand its story. Gameplay consists of playing as a humanoid squid like character called a "Inkling" (Or in later series, a humanoid octopus like character called a "Octoling".) The primary game mode being "Turf War" where players must shoot their ink all over the map, and whichever team has the most inked by the end of the game wins. There are also other game modes such as the singleplayer story mode, or competitive play. In Splatoon 2, a new game mode was introduced called "Salmon Run" where players are together in a group of 4 and must fight off waves of "Salmonids" to collect golden eggs and fill a quota by the end of the wave for rewards.</p>
+<!--Header-->
+<div class="header" style="position: fixed; top: -90px; left: 25px; z-index: 2; pointer-events: none;"><h2 id="header"><i><u>Splatnet</u></i></h2></div>
+<div class="headertext" style="position: fixed; top: 25px; left: 278px; z-index: 2; pointer-events: none;"><h3 id="header2">A Splatoon Webring</h3></div>
 
-<p>"Splatfests" are events that occur where players choose a team from a theme (Such as "Cats vs Dogs") and play Turf Wars against each other for their respective teams. The final splatfests of Splatoon 1 and Splatoon 2 actually influenced the next games story. (Splatoon 1s final Splatfest had "Callie vs Marie" in which Marie won, making Callie the sister that has to be saved in Splatoon 2. Whilst in Splatoon 2s final Splatfest had "Chaos vs Order" in which Chaos won, making Splatoon 3 "Chaos" themed.)</p>
+<!--Main Box-->
+<div class="module-border-wrap" style="position: fixed; top: 60px; left: 15px;"><div class="module">
+    <IFRAME name="mainframe" src="/WR/Splatnet/members.html" width=505px height=857 marginwidth=0 marginheight=0 frameborder=0 scrolling=auto></IFRAME>
+</div></div>
 
-<p>Splatoon 1 was first revealed at the Nintendo E3 2014 Digital Event and was released for the WiiU on May 29th 2015. The series went through many ideas before becoming the beloved series it is now. The directors for Splatoon, Yusuke Amano and Tsubasa Sakaguchi along with producer Hisashi Nogami had first envisioned the game as black and white tofu blocks shooting ink out of their nose. And then later made the characters into bunnies, this idea was going in the right direction but whenever they showed the product, they were always asked "Why bunnies?". Going back to the drawing board, they finally settled on squids and were able to get the demo ready just in time for E3. Since then the series became one of the most sold and loved games on the WiiU, selling about 4.95 million copies despite many considering the console a failure.</p>
+<!--Nav-->
+<div class="navbuttons" style="position: fixed; top: 10px; left: 290px; mix-blend-mode: hard-light;">
+<a href="/WR/Splatnet/join.html" target="mainframe"><img src="/WR/Splatnet/Images/yellowocto.png" width="50"></a>
+<a href="/WR/Splatnet/rules.html" target="mainframe"><img src="/WR/Splatnet/Images/greensquid.png" width="50"></a>
+<a href="/WR/Splatnet/members.html" target="mainframe"><img src="/WR/Splatnet/Images/pinkocto.png" width="50"></a>
+<a href="/WR/Splatnet/styles.html" target="mainframe"><img src="/WR/Splatnet/Images/bluesquid.png" width="50"></a>
+</div>
 
-<p>Splatoon 2 was teased October 20th 2016, and revealed on January 13th 2017, and finally released worldwide July 21st 2017. This installment was shown to be massively successful, selling 13.3 million copies. And is still the most played Splatoon game in modern era. It introduced plenty of new weapons, maps, and player customization. On June 14th 2018 the "Octo Expansion" DLC was release which finally put the mysterious Octolings into the spotlight as playable characters after the player beats the DLC.</p>
-
-<p>Splatoon 3 was announced on February 17th 2021 and made its release September 9th 2022, with tons of new features and quality of life improvements. Instead of a more "Drowsy" chaotic we often see in media, Splatoon 3 takes a "fun, fruits basket" approach with its chaoticness and marks many new achievements for the series such as the new idol group, Deep Cut, being a trio and also having a member that is not a Inkling nor Octoling. Splatoon 3 had its DLC revealed as "Splatoon 3: Expansion Pass" on February 8th, 2023 on Ninteod Direct. The bundle consists of two waves. Wave 1, Inkopolis. And Wave 2, Side Order.</p>
-
-<hr>
-
-<p>Interested in joining? Check out the above links!<br>[<a href="">Back</a> / <a href="https://boothworldindustries.neocities.org/">Home</a> / <a href="/sitemap">Sitemap</a>]</p>
-  </center></div>
+<!--Out-->
+<div class="outnav" style="position: fixed; bottom: -17px; left: 530px;">
+  <p><a href="/Main/ForYou/gifts">B<br>a<br>c<br>k</a><br><br> <a href="/Index/home">H<br>o<br>m<br>e</a><br><br> <a href="/sitemap">S<br>i<br>t<br>e<br>m<br>a<br>p</a></p>
 
   </body>
 </html>
