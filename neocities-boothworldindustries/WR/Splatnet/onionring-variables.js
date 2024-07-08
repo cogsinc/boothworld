@@ -17,6 +17,7 @@ var sites = [
 'https://magolor.neocities.org/',
 'https://rh0mbus0fruin.neocities.org',
 'https://splattacks.neocities.org/',
+'https://www.cinnamuff.space/',
 'https://shiroganes.neocities.org/',
 'https://thechillzone.neocities.org/',
 'https://jojjo.neocities.org/',
