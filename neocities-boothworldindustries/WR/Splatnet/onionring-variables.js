@@ -32,7 +32,8 @@ var sites = [
 'https://waltzqueen.neocities.org/media/games/splatoon',
 'https://muddymorals.neocities.org/',
 'https://captdedeyes.com/',
-'https://catboo.neocities.org/'
+'https://catboo.neocities.org/',
+'https://circat.neocities.org/'
 ];
 
 //the name of the ring
