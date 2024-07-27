@@ -33,7 +33,8 @@ var sites = [
 'https://muddymorals.neocities.org/',
 'https://captdedeyes.com/',
 'https://catboo.neocities.org/',
-'https://circat.neocities.org/'
+'https://circat.neocities.org/',
+'https://4lcoholic.neocities.org/'
 ];
 
 //the name of the ring

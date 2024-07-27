@@ -37,7 +37,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #a3302c;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #a3302c;"></center>';
     document.write(imgStr); document.close();
 }
    
@@ -58,7 +58,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #a36f2c;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #a36f2c;"></center>';
     document.write(imgStr); document.close();
 }
    
@@ -79,7 +79,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #a3a32c;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #a3a32c;"></center>';
     document.write(imgStr); document.close();
 }
    
@@ -101,7 +101,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #35a32c;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #35a32c;"></center>';
     document.write(imgStr); document.close();
 }
    
@@ -123,7 +123,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #2c32a3;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #2c32a3;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -145,7 +145,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #872ca3;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #872ca3;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -167,7 +167,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #a32c71;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #a32c71;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -191,11 +191,11 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #681909;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #681909;"></center>';
     document.write(imgStr); document.close();
 }
 
- textArray = ("Its Groundhog Day! ...Again.");
+ textArray = ("Its Groundhog Day!<br>...Again.");
  document.write('<center><p style="background-color: #f9d68e; color: #681909">'+ textArray +'</p></center>');
 }
  
@@ -210,11 +210,11 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #9b1540;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #9b1540;"></center>';
     document.write(imgStr); document.close();
 }
 
- textArray = ("Have a lovely Valentines Day to all hopeless and ful romantics.");
+ textArray = ("Have a lovely Valentines Day to<br>all hopeless and ful romantics.");
  document.write('<center><p style="background-color: #ed97b2; color: #9b1540">'+ textArray +'</p></center>');
 }
  
@@ -230,11 +230,11 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #0c6d12;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #0c6d12;"></center>';
     document.write(imgStr); document.close();
 }
 
- textArray = ("Have a lucky St. Patricks Day; But don't spend all your money on the lottery!");
+ textArray = ("Have a lucky St. Patricks Day; But<br>don't spend all your money on the lottery!");
  document.write('<center><p style="background-color: #0c6d12; color: #edfc4e">'+ textArray +'</p></center>');
 }
 
@@ -250,11 +250,11 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #870626;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #870626;"></center>';
     document.write(imgStr); document.close();
 }
 
- textArray = ("Our flower blooms endlessly, my dear bellringer.");
+ textArray = ("Our flower blooms endlessly,<br>my dear bellringer.");
  document.write('<center><p style="background-color: #e8b425; color: #870626">'+ textArray +'</p></center>');
 }
 
@@ -270,7 +270,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #670189;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #670189;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -290,11 +290,11 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #f4f464;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #f4f464;"></center>';
     document.write(imgStr); document.close();
 }
 
- textArray = ("Happy April Fools! If a faceless cat were to approach you, what would you draw on her?");
+ textArray = ("Happy April Fools! If a faceless cat<br>were to approach you,<br>what would you draw on her?");
  document.write('<center><p style="background-color: #9acdd3; color: #bc126d">'+ textArray +'</p></center>');
 }
  
@@ -308,7 +308,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #0c4902;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #0c4902;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -328,7 +328,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #960b04;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #960b04;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -352,11 +352,11 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #c6156b;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #c6156b;"></center>';
     document.write(imgStr); document.close();
 }
 
- textArray = ("A delightful scent fills the air, and candles are lit. Happy birthday, sweetest Pinkie.");
+ textArray = ("A delightful scent fills the air, and candles<br>are lit. Happy birthday, sweetest Pinkie.");
  document.write('<center><p style="background-color: #c6156b; color: #fcbdd4">'+ textArray +'</p></center>');
 }
  
@@ -373,11 +373,11 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #eac231;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #eac231;"></center>';
     document.write(imgStr); document.close();
 }
 
- textArray = ("The bell rings on the dawn of this day. Happy birthday, my beloved Benjamin.");
+ textArray = ("The bell rings on the dawn of this day.<br>Happy birthday, my beloved Benjamin.");
  document.write('<center><p style="background-color: #eac231; color: #041451">'+ textArray +'</p></center>');
 }
 
@@ -400,7 +400,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #5e028c;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #5e028c;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -426,7 +426,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #870000;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #870000;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -446,10 +446,10 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="200" style="border: 3px inset #090642;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #090642;"></center>';
     document.write(imgStr); document.close();
 }
 
- textArray = ("Until next year~ Thank you for visiting Boothworld Industries.");
+ textArray = ("Until next year~ Thank you for<br>visiting Boothworld Industries.");
  document.write('<center><p style="background-color: #090642; color: #a3a299">'+ textArray +'</p></center>');
 }
