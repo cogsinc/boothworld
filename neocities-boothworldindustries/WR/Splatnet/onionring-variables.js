@@ -34,7 +34,10 @@ var sites = [
 'https://captdedeyes.com/',
 'https://catboo.neocities.org/',
 'https://circat.neocities.org/',
-'https://4lcoholic.neocities.org/'
+'https://4lcoholic.neocities.org/',
+'https://saturnlmao.neocities.org',
+'https://lurret.neocities.org',
+'https://bubslibarby.neocities.org/'
 ];
 
 //the name of the ring

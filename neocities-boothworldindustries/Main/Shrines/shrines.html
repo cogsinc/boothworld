@@ -3,180 +3,100 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Nexus</title>
+    <title>The Summoning Circle</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="shortcut icon" type="image/png" href="/Main/Shrines/SHAYE-INDEX.jpg">
-    <link rel="stylesheet" href="https://unpkg.com/xp.css">
+    <link rel="shortcut icon" type="image/png" href="/Main/Shrines/favicon.png">
     <style>
-  body {
-  background-image: url("/Main/Shrines/shrinesbg.png");
-  background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
   body {
   width: 1905px;
   position: relative;
   }
 
   html, body {margin: 0; height: 100%; overflow: hidden}
+
+  .scroll-div{
+  width: 326px;
+  background: transparent;
+  height: 145px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.scroll-div2{
+  width: 328px;
+  background: transparent;
+  height: 505px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.scroll-object{
+  color: rgb(12, 13, 68);
+  font-size: 15px;
+  padding: 5px;
+}
+
+a:link {
+  color: #860000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #860000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1500d1;
+  background-color: transparent;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+a:active {
+  color: #1500d1;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+hr { display: block; height: 1px; width: 65%;
+  border: 0; border-top: 2px outset rgb(12, 13, 68);}
     </style>
   </head>
-  <body>
+  <body style="background-color: black;">
+
+  <!--Frame-->
+    <center><img src="/Main/Shrines/shrineframe.png" width="1630"></center>
   
-  <!--Main Window-->
-<div class="window" style="max-width: 650px; height: 600px; position: fixed; top: 140px; left: 635px; border: 2px solid blue;">
-  <div class="title-bar">
-    <div class="title-bar-text">BROWSE</div>
-    <div class="title-bar-controls">
-      <button aria-label="Minimize"></button>
-      <button aria-label="Maximize"></button>
-      <button aria-label="Close"></button>
-    </div>
-  </div>
-  <div class="window-body">
-    <pre><IFRAME name="mainframe" src="/Main/Shrines/innerindex.html" width=635 height=550 marginwidth=0 marginheight=0 frameborder=0 scrolling=auto></IFRAME></pre>
-  </div>
-</div>
+
+  <!--Shrine Links-->
+      <div class="textnav" style="position: absolute; top: 320px; left: 790px;"><div class="scroll-div">
+        <div class="scroll-div2">
+          <div class="scroll-object"><center><hr>
+
+<p>-<a href="/Main/Shrines/alternativeradio.html">Alternative Radio</a><br>
+-<a href="/Main/Shrines/deadbydaylight.html">Dead by Daylight</a><br>
+-<a href="/Main/Shrines/gopostal.html">Postal</a> [WIP]<br>
+-<a href="/Main/Shrines/iaxwiki.html">Internet Archive & Wikipedia</a><br>
+-<a href="/Main/Shrines/oingoboingo.html">Oingo Boingo</a> [WIP]<br>
+-<a href="/Main/Shrines/toontown.html">Toontown Online</a> [WIP]<br>
+-<a href="/Main/Abt/Kinship/imaginarylivingbody.html">Kinship</a></p>
+        
+<hr></center></div>
+        </div>
+      </div></div>
 
 
+  <!--Nav-->
+  <div class="sitemap" style="position: absolute; top: 125px; right: 585px; z-index: 2; font-size: 1.4em;"><mark style="background-color: rgb(12, 13, 68);">
+    <a href="/sitemap.html">S<br>I<br>T<br>E<br>M<br>A<br>P</a>
+  </mark></div>
 
-<!--Top-->
-<div class="door1left" style="position: fixed; top: 20px; left: 935px;"><table border="0">
-<tr>
-<td><img src="/Main/Shrines/MadotsukiRoomDoor.png" width="40"></td>
-</tr>
-<tr>
-<td><center><a href="/Main/Shrines/innerindex.html" target="mainframe">Index</a></center></td>
-</tr>
-</table></div>
+  <div class="home" style="position: absolute; bottom: 200px; left: 615px; z-index: 2; font-size: 1.4em; text-align: right;"><mark style="background-color: rgb(12, 13, 68);">
+    <a href="/Index/home.html">H<br>O<br>M<br>E</a>
+  </mark></div>
 
-
-<div class="door1left" style="position: fixed; top: 20px; left: 700px;"><table border="0">
-<tr>
-<td><img src="/Main/Shrines/ForestWorldDoor.png" width="40"></td>
-</tr>
-<tr>
-<td><center><a href="/Main/Shrines/gamesindex.html" target="mainframe">Media</a></center></td>
-</tr>
-</table></div>
-
-
-<div class="door1right" style="position: fixed; top: 20px; right: 700px;"><table border="0">
-<tr>
-<td><img src="/Main/Shrines/NumberWorldDoor.png" width="40"></td>
-</tr>
-<tr>
-<td><center><a href="/Main/Shrines/characterindex.html" target="mainframe">Characters</a></center></td>
-</tr>
-</table></div>
-
-
-<div class="door2left" style="position: fixed; top: 120px; left: 520px;"><table border="0">
-<tr>
-<td><img src="/Main/Shrines/BlockWorldDoor.png" width="40"></td>
-</tr>
-<tr>
-<td><center><a href="/Main/Shrines/webindex.html" target="mainframe">Web</a></center></td>
-</tr>
-</table></div>
-
-
-<div class="door2right" style="position: fixed; top: 120px; right: 520px;"><table border="0">
-<tr>
-<td><img src="/Main/Shrines/NeonWorldDoor.png" width="40"></td>
-</tr>
-<tr>
-<td><center><a href="/Main/Shrines/miscindex.html" target="mainframe">Misc</a></center></td>
-</tr>
-</table></div>
-
-
-<div class="door3left" style="position: fixed; top: 265px; left: 410px;"><table border="0">
-<tr>
-<td><img src="/Main/Shrines/PuddleWorldDoor.png" width="40"></td>
-</tr>
-<tr>
-<td><center><a href="/Main/Shrines/artindex.html" target="mainframe">Art</a></center></td>
-</tr>
-</table></div>
-
-
-<div class="door3right" style="position: fixed; top: 265px; right: 410px;"><table border="0">
-<tr>
-<td><img src="/Main/Shrines/ShieldFolkWorldDoor.png" width="40"></td>
-</tr>
-<tr>
-<td><center><a href="/Main/Shrines/innerindex.html" target="mainframe">TBA</a></center></td>
-</tr>
-</table></div>
-
-
-
-<!--Bottom-->
-<div class="door1left" style="position: fixed; bottom: 20px; left: 700px;"><table border="0">
-<tr>
-<td><img src="/Main/Shrines/MuralWorldDoor.png" width="40"></td>
-</tr>
-<tr>
-<td><center><a href="/Main/Shrines/innerindex.html" target="mainframe">TBA</a></center></td>
-</tr>
-</table></div>
-
-
-<div class="door1right" style="position: fixed; bottom: 20px; right: 700px;"><table border="0">
-<tr>
-<td><img src="/Main/Shrines/GraffitiWorldDoor.png" width="40"></td>
-</tr>
-<tr>
-<td><center><a href="/Main/Shrines/innerindex.html" target="mainframe">TBA</a></center></td>
-</tr>
-</table></div>
-
-
-<div class="door2left" style="position: fixed; bottom: 120px; left: 520px;"><table border="0">
-<tr>
-<td><img src="/Main/Shrines/SnowWorldDoor.png" width="40"></td>
-</tr>
-<tr>
-<td><center><a href="/Main/Shrines/innerindex.html" target="mainframe">TBA</a></center></td>
-</tr>
-</table></div>
-
-
-<div class="door2right" style="position: fixed; bottom: 120px; right: 520px;"><table border="0">
-<tr>
-<td><img src="/Main/Shrines/EyeballWorldDoor.png" width="40"></td>
-</tr>
-<tr>
-<td><center><a href="/Main/Shrines/innerindex.html" target="mainframe">TBA</a></center></td>
-</tr>
-</table></div>
-
-
-<div class="door3left" style="position: fixed; bottom: 265px; left: 410px;"><table border="0">
-<tr>
-<td><img src="/Main/Shrines/DarkWorldDoor.png" width="40"></td>
-</tr>
-<tr>
-<td><center><a href="/Main/Shrines/innerindex.html" target="mainframe">TBA</a></center></td>
-</tr>
-</table></div>
-
-
-<div class="door3left" style="position: fixed; bottom: 265px; right: 410px;"><table border="0">
-<tr>
-<td><img src="/Main/Shrines/CandleWorldDoor.png" width="40"></td>
-</tr>
-<tr>
-<td><center><a href="/Main/Shrines/innerindex.html" target="mainframe">TBA</a></center></td>
-</tr>
-</table></div>
-
-
-<!--Nav-->
-<div class="nav" style="position: fixed; bottom: 120px; left: 900px;">
-<h3 style="font-size: 1.2em;"><font color="blue">[</font><a href="/Index/home">Home</a> <font color="blue">/</font> <a href="/sitemap">Sitemap</a><font color="blue">]</font></h3>
-</div>
  </body>
 </html>

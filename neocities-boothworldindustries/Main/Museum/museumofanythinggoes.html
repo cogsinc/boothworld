@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Museum of Anything Goes</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/png" href="/shayes-head1.jpg">
+    <style>
+body {
+width: 1900px;
+position: relative;
+}
+    </style>
+
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
+
+  </head>
+  <body style="background-color: black;"><center>
+
+<!--Slideshow-->
+<div class="slideshowpos">
+  <div class="slideshow-container">
+
+  <div class="mySlides" style="position: absolute; top: 115px; left: 7px;">
+    <a href="https://files.catbox.moe/tkvi08.png"><img src="https://files.catbox.moe/tkvi08.png" style="width:28%"></a>
+  </div>
+      
+  <div class="mySlides" style="position: absolute; top: 190px; left: 425px;">
+    <a href="https://files.catbox.moe/59mxqd.png"><img src="https://files.catbox.moe/59mxqd.png" style="width:50%"></a>
+  </div>
+      
+  <div class="mySlides" style="position: absolute; top: 190px; left: 129px;">
+    <a href="https://files.catbox.moe/x4td59.jpg"><img src="https://files.catbox.moe/x4td59.jpg" style="width:30%"></a>
+  </div>
+
+  <div class="mySlides" style="position: absolute; top: 220px; left: 25px;">
+    <a href="https://files.catbox.moe/cseu2t.png"><img src="https://files.catbox.moe/cseu2t.png" style="width:32%"></a>
+  </div>
+      
+  </div>
+</div>
+
+<!--SlideshowButtons-->
+<div class="prevbutton" style="position: absolute; top: 235px; left: 566px; z-index: 6;"><a class="prev" onclick="plusSlides(-1)">
+  <img src="/Main/Museum/pointleftunselected.png" width="113"
+       onmouseover="this.src='/Main/Museum/pointleftselected.png';"
+       onmouseout="this.src='/Main/Museum/pointleftunselected.png';">
+</a></div>
+
+<div class="nextbutton" style="position: absolute; top: 231px; right: 555px; z-index: 6;"><a class="next" onclick="plusSlides(1)">
+  <img src="/Main/Museum/pointrightunselected.png" width="113"
+       onmouseover="this.src='/Main/Museum/pointrightselected.png';"
+       onmouseout="this.src='/Main/Museum/pointrightunselected.png';">
+</a></div>
+
+
+
+<!--Frame-->
+<div class="frame" style="position: absolute; top: -10px; left: 170px; pointer-events: none; z-index: 3;"><img src="/Main/Museum/museumframe.png" width="1580"></div>
+<!--NavButtons-->
+<div class="home" style="position: absolute; top: 645px; left: 545px; z-index: 6;"><a href="/Index/home.html">
+  <img src="/Main/Museum/homeunselected.png" width="140"
+       onmouseover="this.src='/Main/Museum/homeselected.png';"
+       onmouseout="this.src='/Main/Museum/homeunselected.png';">
+</a></div>
+
+<div class="sitemap" style="position: absolute; top: 645px; right: 525px; z-index: 6;"><a href="/sitemap.html">
+  <img src="/Main/Museum/sitemapunselected.png" width="140"
+       onmouseover="this.src='/Main/Museum/sitemapselected.png';"
+       onmouseout="this.src='/Main/Museum/sitemapunselected.png';">
+</a></div>
+
+
+
+<!--BottomiFrame-->
+<div class="frame" style="position: absolute; top: 750px; left: 550px;">
+<IFRAME name="mainframe" src="/Main/Museum/museuminner.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" width=800 ></IFRAME>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+  </center></body>
+</html>
