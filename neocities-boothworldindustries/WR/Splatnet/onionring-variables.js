@@ -11,6 +11,7 @@ var sites = [
 'https://moonview.neocities.org/',
 'https://blagi.neocities.org',
 'https://bechnokid.neocities.org/home',
+'https://dokodemo.neocities.org/shrines/splatoon/index.html',
 'https://angelnetcast.neocities.org/',
 'https://ophanimkei.com/',
 'https://lovelyqats.neocities.org/',
@@ -37,7 +38,10 @@ var sites = [
 'https://4lcoholic.neocities.org/',
 'https://saturnlmao.neocities.org',
 'https://lurret.neocities.org',
-'https://bubslibarby.neocities.org/'
+'https://bubslibarby.neocities.org/',
+'https://toothspit.neocities.org/',
+'https://aroceu.com/',
+'https://cresentri.com/'
 ];
 
 //the name of the ring
