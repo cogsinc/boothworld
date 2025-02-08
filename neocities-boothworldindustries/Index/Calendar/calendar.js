@@ -191,7 +191,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #681909;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="140" style="border: 3px inset #681909;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -210,7 +210,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #9b1540;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="140" style="border: 3px inset #9b1540;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -230,7 +230,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #0c6d12;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="140" style="border: 3px inset #0c6d12;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -250,7 +250,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #870626;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="140" style="border: 3px inset #870626;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -270,7 +270,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #670189;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="140" style="border: 3px inset #670189;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -290,7 +290,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #f4f464;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="140" style="border: 3px inset #f4f464;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -308,7 +308,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #0c4902;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="140" style="border: 3px inset #0c4902;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -328,7 +328,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #960b04;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="140" style="border: 3px inset #960b04;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -352,7 +352,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #c6156b;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="140" style="border: 3px inset #c6156b;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -373,7 +373,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #eac231;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="140" style="border: 3px inset #eac231;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -400,7 +400,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #5e028c;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="140" style="border: 3px inset #5e028c;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -426,7 +426,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #870000;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="140" style="border: 3px inset #870000;"></center>';
     document.write(imgStr); document.close();
 }
 
@@ -446,7 +446,7 @@ function getRandomImage(imgAr, path) {
     path = path || '/Index/Calendar/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<center><img src="' + path + img + '" width="170" style="border: 3px inset #090642;"></center>';
+    var imgStr = '<center><img src="' + path + img + '" width="140" style="border: 3px inset #090642;"></center>';
     document.write(imgStr); document.close();
 }
 

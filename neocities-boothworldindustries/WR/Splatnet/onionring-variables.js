@@ -38,10 +38,18 @@ var sites = [
 'https://4lcoholic.neocities.org/',
 'https://saturnlmao.neocities.org',
 'https://lurret.neocities.org',
-'https://bubslibarby.neocities.org/',
+'https://boopsboops.neocities.org/',
 'https://toothspit.neocities.org/',
-'https://aroceu.com/',
-'https://cresentri.com/'
+'https://kingdra.net/',
+'https://cresentri.com/',
+'https://introvertedloser.neocities.org/',
+'https://veesdomain.xyz/',
+'https://hench4life.neocities.org',
+'https://weredog.nekoweb.org/',
+'https://octmari.neocities.org',
+'https://upturnedchair.neocities.org/',
+'https://otto-the-coolest.neocities.org/',
+'https://tripixel.gay/'
 ];
 
 //the name of the ring
